@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.public')
 
 @section('content')
 <style>
@@ -52,7 +52,7 @@
 
 <div class="container-fluid py-5">
     <div class="checkout-wrapper">
-        <h2 class="fw-bold mb-5 text-center">Finalizar seu Pedido 🌸</h2>
+        <h2 class="fw-bold mb-5 text-center">Finalizar seu Pedido</h2>
 
         <form action="{{ route('pagamento.processar') }}" method="POST">
             @csrf
